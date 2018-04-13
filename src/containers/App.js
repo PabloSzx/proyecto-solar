@@ -4,10 +4,22 @@ import styled from "styled-components";
 import logo from "../dist/logo.png";
 import GoogleDocsViewer from "react-google-docs-viewer";
 import Informe from "../dist/informe.pdf";
-const DIV = () => <div>Hola Mundo!</div>;
+const DIV = () => (
+	<div>
+		<Img src={logo} />
+		<GoogleDocsViewer
+			width="600px"
+			height="780px"
+			fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe.pdf"
+		/>
+	</div>
+);
 
 const Img = styled.img`
-	width: 50vw;
+	position: absolute;
+	right: 0;
+	width: 20%;
+	z-index: -1;
 `;
 
 class App extends Component {
@@ -15,12 +27,6 @@ class App extends Component {
 		return (
 			<BrowserRouter>
 				<Switch>
-					<GoogleDocsViewer
-						width="600px"
-						height="780px"
-						fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe.pdf"
-					/>
-					<Img src={logo} />
 					<Route exact path="/" component={DIV} />
 					<Redirect from="/*" to="/" />
 				</Switch>
