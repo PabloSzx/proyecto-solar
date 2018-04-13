@@ -15,7 +15,11 @@ class App extends Component {
 		return (
 			<BrowserRouter>
 				<Switch>
-					<GoogleDocsViewer width="600px" height="780px" fileUrl={Informe} />
+					<GoogleDocsViewer
+						width="600px"
+						height="780px"
+						fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe.pdf"
+					/>
 					<Img src={logo} />
 					<Route exact path="/" component={DIV} />
 					<Redirect from="/*" to="/" />
