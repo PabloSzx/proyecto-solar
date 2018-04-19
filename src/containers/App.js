@@ -24,7 +24,7 @@ let opts = {
 	width: "640",
 	playerVars: {
 		// https://developers.google.com/youtube/player_parameters
-		autoplay: 0
+		autoplay: 1
 	}
 };
 
@@ -66,7 +66,7 @@ class DIV extends Component {
 			}
 			case "video": {
 				return (
-					<YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady} />
+					<YouTube videoId="sr4lSBuYV_w" opts={opts} onReady={this._onReady} />
 				);
 			}
 			default: {
