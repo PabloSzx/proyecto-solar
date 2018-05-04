@@ -7,7 +7,14 @@ import List from "material-ui/List";
 import DescriptionIcon from "@material-ui/icons/Description";
 import VideoIcon from "@material-ui/icons/OndemandVideo";
 
+const styles = {
+  text: {
+    "font-size": "0.8rem"
+  }
+};
+
 class PermanentDrawer extends Component {
+  style;
   render() {
     return (
       <Drawer variant="permanent" anchor="left">
@@ -24,28 +31,36 @@ class PermanentDrawer extends Component {
             <ListItemIcon>
               <DescriptionIcon />
             </ListItemIcon>
-            <ListItemText primary="Informe Tarea 1" />
+            <ListItemText>
+              <p style={styles.text}>Informe Tarea 1</p>
+            </ListItemText>
           </ListItem>
           <Divider />
           <ListItem button onClick={() => this.props.setPage("video1")}>
             <ListItemIcon>
               <VideoIcon />
             </ListItemIcon>
-            <ListItemText primary="Video Tarea 1" />
+            <ListItemText>
+              <p style={styles.text}>Video Tarea 1</p>
+            </ListItemText>
           </ListItem>
           <Divider />
           <ListItem button onClick={() => this.props.setPage("informe2")}>
             <ListItemIcon>
-              <VideoIcon />
+              <DescriptionIcon />
             </ListItemIcon>
-            <ListItemText primary="Informe Tarea 2" />
+            <ListItemText>
+              <p style={styles.text}>Informe Tarea 2</p>
+            </ListItemText>
           </ListItem>
           <Divider />
           <ListItem button onClick={() => this.props.setPage("video2")}>
             <ListItemIcon>
               <VideoIcon />
             </ListItemIcon>
-            <ListItemText primary="Video Tarea 2" />
+            <ListItemText>
+              <p style={styles.text}>Video Tarea 2</p>
+            </ListItemText>
           </ListItem>
         </List>
       </Drawer>

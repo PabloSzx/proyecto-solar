@@ -33,7 +33,7 @@ class DIV extends Component {
     super(props);
 
     this.state = {
-      page: "informe",
+      page: "informe2",
       width: 0,
       height: 0
     };
@@ -69,7 +69,7 @@ class DIV extends Component {
           <GoogleDocsViewer
             width="100vh"
             height="98vh"
-            fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe.pdf"
+            fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/Informe%202.pdf"
           />
         );
       }
