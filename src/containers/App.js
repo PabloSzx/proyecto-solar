@@ -78,7 +78,7 @@ class DIV extends Component {
           <GoogleDocsViewer
             width="100vh"
             height="98vh"
-            fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe3.pdf"
+            fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/hojadecalculotarea3.pdf"
           />
         );
       }
