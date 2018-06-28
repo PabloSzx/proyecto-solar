@@ -72,6 +72,15 @@ class PermanentDrawer extends Component {
             </ListItemText>
           </ListItem>
           <Divider />
+          <ListItem button onClick={() => this.props.setPage("informe3_1")}>
+            <ListItemIcon>
+              <DescriptionIcon />
+            </ListItemIcon>
+            <ListItemText>
+              <p style={styles.text}>Informe 3</p>
+            </ListItemText>
+          </ListItem>
+          <Divider />
           <ListItem button onClick={() => this.props.setPage("video3")}>
             <ListItemIcon>
               <VideoIcon />

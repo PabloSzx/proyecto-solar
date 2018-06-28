@@ -82,6 +82,16 @@ class DIV extends Component {
           />
         );
       }
+      case "informe3_1": {
+        return (
+          <GoogleDocsViewer
+            width="100vh"
+            height="98vh"
+            fileUrl="https://github.com/PabloSzx/proyecto-solar/raw/master/src/dist/informe_3.pdf"
+          />
+        );
+      }
+
       case "video1": {
         return (
           <YouTube videoId="sr4lSBuYV_w" opts={opts} onReady={this._onReady} />
